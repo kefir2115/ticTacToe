@@ -1,2 +1,2 @@
-# ticTacToe
-Tic Tac Toe with JavaScript
+# Tic Tac Toe
+Tic Tac Toe with pure JavaScript, CSS and HTML
