@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="msg">
+            <h1 class="title">Tic Tac Toe</h1>
+            <div class="winner">
+                Get three of your symbols in a row to win!
+            </div>
+            <button class="replay hidden">Play again!</button>
+            <div class="turn"></div>
+        </div>
+        <div class="box menu">
+            <input type="text" name="gameID" class="gameid" placeholder="Game id" maxlength="4">
+            <button class="join">Join game</button><br>
+            <button class="hostonline">Host online game</button><br>
+            <button class="hostoffline">Host offline game</button>
+        </div>
+        <div class="box lobby hidden">
+            <div class="message">Waiting for 2nd player...<br>Your game id: <div class="gid">0000</div></div>
+        </div>
+        <div class="box game hidden">
+            <button class="cell1">&nbsp;</button>
+            <button class="cell2">&nbsp;</button>
+            <button class="cell3">&nbsp;</button><br>
+            <button class="cell4">&nbsp;</button>
+            <button class="cell5">&nbsp;</button>
+            <button class="cell6">&nbsp;</button><br>
+            <button class="cell7">&nbsp;</button>
+            <button class="cell8">&nbsp;</button>
+            <button class="cell9">&nbsp;</button>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+        <script src="web.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
